@@ -4,7 +4,7 @@
 # In[ ]:
 
 
-def transform(one_num):
+def transform(one_num):   ## 要求写一个类
     '''
     将阿拉伯数字转化为罗马数字
     '''
@@ -12,7 +12,7 @@ def transform(one_num):
     str_list=["M", "CM", "D", "CD", "C", "XC", "L", "XL", "X", "IX", "V", "IV", "I"]
     res=''
     for i in range(len(num_list)):
-        while one_num>=num_list[i]:
+        while one_num>=num_list[i]:   ## 要避免如此嵌套
             one_num-=num_list[i]
             res+=str_list[i]
     return res
